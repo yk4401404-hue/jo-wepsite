@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b20">
+  <title>حكايتنا ✦</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="stars"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">حكايتنا <span>✦</span></a>
+    <button class="sound-btn" id="soundBtn">
+      ♫ <span>الصوت</span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- الصفحة الرئيسية -->
+    <section class="hero section" id="home">
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">✦ بحبك يا أحلى حاجة حصلتلي في دنيتي</p>
+
+<h1>
+  متزعليش مني<br>
+  <em>لو زعلتك في يوم من الأيام</em>
+</h1>
+        <p class="hero-text" id="introText"></p>
+
+        <button class="primary-btn" id="startBtn">
+          ابدأ الحكاية ←
+        </button>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+
+        <div class="hero-photo" id="heroPhoto">
+          <div class="photo-placeholder">حط صورتكم هنا</div>
+        </div>
+
+        <div class="floating-note note-top">✦ أجمل صدفة</div>
+        <div class="floating-note note-bottom">♡ ذكرى مبتتنسيش</div>
+      </div>
+
+    </section>
+
+    <!-- البداية -->
+    <section class="section intro-section" id="story">
+
+  <div class="section-heading reveal">
+    <h2>بحبك</h2>
+    <p>يروح قلبي</p>
+  </div>
+
+  <div class="story-card reveal">
+    <div class="story-mark">“</div>
+
+    <p id="storyText"></p>
+
+    <span class="story-date" id="storyDate"></span>
+  </div>
+
+</section><section class="section intro-section" id="story">
+
+      
+    <!-- الذكريات -->
+    <section class="section memories-section" id="memories">
+
+      <div class="section-heading reveal">
+  <h2>فاكره الخروجه دي 😂♥</h2>
+  <p>عايز بوسه 🙃</p>
+</div>
+      <div class="gallery" id="gallery"></div>
+
+    </section>
+
+    <!-- الخط الزمني -->
+    <section class="section timeline-section" id="timeline">
+
+      <div class="section-heading reveal">
+  <h2> مع بعض لآخر العمر</h2>
+</div>v>
+
+      <div class="timeline" id="timelineItems"></div>
+
+    </section>
+
+    <!-- الرسالة -->
+    <section class="letter-section section">
+
+      <div class="letter-card reveal">
+        <div class="letter-icon">✉</div>
+
+        <p class="eyebrow">04 — رسالة مخصوص</p>
+
+        <h2>في كلام لسه <em>متقالش...</em></h2>
+
+        <p>اضغط وافتح الرسالة.</p>
+
+        <button class="primary-btn" id="letterBtn">
+          افتح رسالتك ♡
+        </button>
+      </div>
+
+    </section>
+
+    <!-- النهاية -->
+    <section class="final-section section">
+
+      <div class="final-heart">♥</div>
+
+      <p class="eyebrow">والحكاية لسه مكملة</p>
+
+      <h2 id="closingTitle"></h2>
+
+      <p id="closingText"></p>
+
+      <a class="back-top" href="#home">ارجع للبداية ↑</a>
+
+    </section>
+
+  </main>
+
+  <!-- نافذة الرسالة -->
+  <div class="modal" id="letterModal" aria-hidden="true">
+
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+
+    <article class="letter-modal">
+
+      <button class="close-modal" id="closeModal">×</button>
+
+      <div class="letter-icon">♡</div>
+
+      <p class="eyebrow">من القلب</p>
+
+      <h2 id="letterTitle"></h2>
+
+      <p id="letterBody"></p>
+
+      <span class="signature" id="signature"></span>
+
+    </article>
+
+  </div>
+
+  <footer>
+    اتعملت بكل حب <span>✦</span>
+  </footer>
+  <audio id="backgroundMusic" src="assets/music/sound.mpeg" loop></audio>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
